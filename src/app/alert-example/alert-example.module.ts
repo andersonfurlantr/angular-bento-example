@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { AlertExampleRoutingModule } from './alert-example-routing.module';
 import { AlertExampleComponent } from './alert-example.component';
+import { BentoAlertModule } from '@bento/bento-ng';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { AlertExampleComponent } from './alert-example.component';
   ],
   imports: [
     CommonModule,
-    AlertExampleRoutingModule
+    AlertExampleRoutingModule,
+    BentoAlertModule
   ]
 })
 export class AlertExampleModule { }

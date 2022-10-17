@@ -1,1 +1,26 @@
-<p>alert-example works!</p>
+<!-- Demo code for reference only. Think before you cut-and-paste. -->
+
+<bento-alert [items]="alerts" (close)="closeAlert($event)"></bento-alert>
+
+<h3>Persistent alerts</h3>
+
+<p>
+  <button class="btn btn-outline-primary" (click)="addAlert('success')">Add success alert</button>
+  &nbsp;
+  <button class="btn btn-outline-primary" (click)="addAlertInfo('info')">Add info alert</button>
+  &nbsp;
+  <button class="btn btn-outline-primary" (click)="addAlertWarn('warning')">Add warning alert</button>
+  &nbsp;
+  <button class="btn btn-outline-primary" (click)="addAlertDanger('danger')">Add danger alert</button>
+  &nbsp;
+</p>
+<h3>Timed alerts</h3>
+<p>
+  <button class="btn btn-outline-primary" (click)="addAlertWithTimeout('success')">Add success alert</button>
+  &nbsp;
+  <button class="btn btn-outline-primary" (click)="addAlertWithTimeoutInfo('info')">Add info alert</button>
+  &nbsp;
+</p>
+<p>
+  <button class="btn btn-primary" (click)="alerts=[]">Reset alerts</button>
+</p>
