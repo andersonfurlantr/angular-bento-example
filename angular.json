@@ -31,6 +31,8 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/@bento/bento-ng/styles/theme.css",
+              "node_modules/@bento/bento-ng/styles/fonts.css",
               "src/styles.scss"
             ],
             "scripts": []
